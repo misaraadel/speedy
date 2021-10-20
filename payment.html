@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--start the meta tags-->
+        <!--meta tag for utf-8 code for ar and en-->
+        <meta charset="utf-8">
+        <!--meta tag for description of website-->
+        <meta name="description" content="....">
+        <!--meta tag for the author of website-->
+        <meta name="author" content="misara adel">
+        <!--meta tag for make website compatible with all screen devices-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--end the meta tags-->
+        <!--title tag for website appear in tab-->
+        <title>speedy booking</title>
+        <!-- the style link for image icon-->
+        <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon"/>
+        <!--start the intialize of css library files-->
+        <!--the intilize of fontawsome lib-->
+        <link rel="stylesheet" href="assets/css/lib/all.min.css">
+        <!--the intilize of animate lib used with wow js lib-->
+        <link rel="stylesheet" href="assets/css/lib/datepicker.min.css">
+        <!--the intilize of bootstrap en version lib-->
+        <!-- <link rel="stylesheet" href="assets/css/lib/bootstrap.css"> -->
+        <!--the intilize of bootstrap ar version lib-->
+        <link rel="stylesheet" href="assets/css/lib/bootstrap-rtl.min.css">
+        <!--the intilize of owl carousel lib-->
+        <link rel="stylesheet" href="assets/css/lib/owl.carousel.min.css">
+        <!--the intilize of dots that appear with owl carousel -->
+        <link rel="stylesheet" href="assets/css/lib/owl.theme.default.css">
+        <!--end the intialize of css library files-->
+        <!--start the intilalize of css files -->
+        <!--the stylesheet en file-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!--the media file screen -->
+        <link rel="stylesheet" href="assets/css/media.css">
+        <!--end the intilalize of css files-->
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="#" class="brand-name">
+                <img src="assets/images/logo.png" alt="" />
+            </a>
+        </nav>
+       <ul class="bottom-nav">
+            <li class="bottom-nav-item">
+                <a href="index.html" class="bottom-nav-link">
+                    <i class="fas fa-search"></i>
+                    <span>بحث</span>
+                </a>
+            </li>
+            <li class="bottom-nav-item">
+                <a href="booking.html" class="bottom-nav-link">
+                    <i class="fas fa-briefcase"></i>
+                    <span>حجوزاتي</span>
+                </a>
+            </li>
+            <li class="bottom-nav-item">
+                <a href="payment.html" class="bottom-nav-link active">
+                    <i class="fas fa-briefcase"></i>
+                    <span>الحساب</span>
+                </a>
+            </li>
+            <li class="bottom-nav-item">
+                <a href="booking.html" class="bottom-nav-link">
+                    <i class="fas fa-briefcase"></i>
+                    <span>التقارير</span>
+                </a>
+            </li>
+       </ul>
+       <main>
+            <section class="tower">
+                <div class="container">
+                    <div class="heading">
+                        <h4>ادفع الان</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="nav nav-tabs flex-shape" id="planeWay" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <a class="nav-link active" id="long-tab" data-toggle="tab" href="#long" role="tab" aria-controls="long" aria-selected="true">
+                                    <i class="fab fa-cc-visa"></i>
+                                    <span>
+                                        الدفع بالفيزا
+                                    </span>
+                                  </a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <a class="nav-link" id="exchange-tab" data-toggle="tab" href="#exchange" role="tab" aria-controls="exchange" aria-selected="false">
+                                    <i class="fas fa-dollar-sign"></i>
+                                    <span>
+                                        الحساب البنكي
+                                    </span>
+                                  </a>
+                                </li>
+                            </ul>
+                        </div>  
+                      
+                        <div class="col-12">
+                            <div class="tab-content" id="planeWayContent">
+                                <div class="tab-pane fade show active" id="long" role="tabpanel" aria-labelledby="long-tab">
+                                    <form class="form-content">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-12 mb-3">
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="رقم البطاقة" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-12 mb-3">
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="اسم صاحب البطاقة" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-12 mb-3">
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="CVV" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-12 mb-3">
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="تاريخ انتهاء البطاقة" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-12 mt-4">
+                                                <div class="btn-contain">
+                                                    <button type="button" class="btn-content blue-color add-popup">
+                                                        تاكيد
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="exchange" role="tabpanel" aria-labelledby="exchange-tab">
+                                    <form class="form-content">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-12 mb-5">
+                                                <div class="btn-contain">
+                                                    <div class="from-check">
+                                                        <label class="size-lable">
+                                                            <input type="file" class="size-check"/>
+                                                            <span>ارفاق صورة التحويل</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="col-12 mt-4">
+                                                <div class="btn-contain">
+                                                    <button type="button" class="btn-content blue-color add-popup">
+                                                        تاكيد
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+       </main>
+       <div class="poup-window">
+            <div class="popup-overlay close-popup-window"></div>
+            <div class="popup-content">
+                <div class="image-content">
+                    <img src="assets/images/check.svg" class="icon" alt="" />
+                </div>
+                <h4>تم ارسال طلبك في انتظار مراجعة الاداره</h4>
+                <button type="button" class="btn-content blue-color close-popup-window">
+                    غلق
+                </button>
+            </div>
+        </div>  
+        <!--start the intialize of js lib-->
+        <!--first intilize jquery lib-->
+        <script src="assets/js/lib/jquery4.js"></script>
+        <!--second intialize popper js lib-->
+        <script src="assets/js/lib/popper.js"></script>
+        <!--third intialize bootstrap js lib-->
+        <script src="assets/js/lib/bootstrap.js"></script>
+        <!--intialize owl coursel js lib -->
+        <script src="assets/js/lib/owl.carousel.min.js"></script>
+        <script src="assets/js/lib/datepicker.min.js"></script>
+        <!--end the intialize of js lib-->
+        <!--intialize main js file-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
