@@ -23,7 +23,7 @@
     font-family: "ExpoArabic" , sans-serif ;
     scroll-behavior: smooth;
     &::selection{
-        background-color: #368B85;
+        background-color: #0071BC;
         color: #fff; 
     }
     &::-webkit-scrollbar {
@@ -33,11 +33,11 @@
         background-color: #ccc;
     }
     &::-webkit-scrollbar-thumb {
-        background: #368B85; 
+        background: #0071BC; 
         border-radius: 8px;
     }
     &::-webkit-scrollbar-thumb:hover {
-        background: #FFD371; 
+        background: #0071BC; 
     }
 }
 .overflowNone{
@@ -60,15 +60,23 @@ ul{
     margin: 0px;
     padding: 0px;
 }
+.owl-theme .owl-dots {
+    position: absolute;
+    bottom: 10px;
+    z-index: 99;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .owl-theme .owl-dots .owl-dot span{
-    width: 20px;
-    height: 4px;
+    width: 30px;
+    height: 2px;
     border-radius: 4px;
-    background-color: #FFD371;
+    background-color: #0071BC;
     opacity: .5;
     transition: all .5s linear;
 }
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background-color: #0071BC;
     opacity: 1;
 }
 .overflowNone{

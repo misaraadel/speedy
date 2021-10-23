@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--start the meta tags-->
+        <!--meta tag for utf-8 code for ar and en-->
+        <meta charset="utf-8">
+        <!--meta tag for description of website-->
+        <meta name="description" content="....">
+        <!--meta tag for the author of website-->
+        <meta name="author" content="misara adel">
+        <!--meta tag for make website compatible with all screen devices-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--end the meta tags-->
+        <!--title tag for website appear in tab-->
+        <title>speedy booking</title>
+        <!-- the style link for image icon-->
+        <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon"/>
+        <!--start the intialize of css library files-->
+        <!--the intilize of fontawsome lib-->
+        <link rel="stylesheet" href="assets/css/lib/all.min.css">
+        <!--the intilize of animate lib used with wow js lib-->
+        <link rel="stylesheet" href="assets/css/lib/datepicker.min.css">
+        <!--the intilize of bootstrap en version lib-->
+        <!-- <link rel="stylesheet" href="assets/css/lib/bootstrap.css"> -->
+        <!--the intilize of bootstrap ar version lib-->
+        <link rel="stylesheet" href="assets/css/lib/bootstrap-rtl.min.css">
+        <!--the intilize of owl carousel lib-->
+        <link rel="stylesheet" href="assets/css/lib/owl.carousel.min.css">
+        <!--the intilize of dots that appear with owl carousel -->
+        <link rel="stylesheet" href="assets/css/lib/owl.theme.default.css">
+        <!--end the intialize of css library files-->
+        <!--start the intilalize of css files -->
+        <!--the stylesheet en file-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!--the media file screen -->
+        <link rel="stylesheet" href="assets/css/media.css">
+        <!--end the intilalize of css files-->
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="index.html" class="brand-name">
+                <img src="assets/images/logo.png" alt="" />
+            </a>
+        </nav>
+       <ul class="bottom-nav">
+            <li class="bottom-nav-item">
+                <a href="index.html" class="bottom-nav-link active">
+                    <i class="fas fa-search"></i>
+                    <span>بحث</span>
+                </a>
+            </li>
+            <li class="bottom-nav-item">
+                <a href="booking.html" class="bottom-nav-link">
+                    <i class="fas fa-briefcase"></i>
+                    <span>حجوزاتي</span>
+                </a>
+            </li>
+            <li class="bottom-nav-item">
+                <a href="payment.html" class="bottom-nav-link">
+                    <i class="fas fa-briefcase"></i>
+                    <span>الحساب</span>
+                </a>
+            </li>
+            <li class="bottom-nav-item">
+                <a href="booking.html" class="bottom-nav-link">
+                    <i class="fas fa-briefcase"></i>
+                    <span>التقارير</span>
+                </a>
+            </li>
+       </ul>
+       <main>
+            <section class="tower">
+                <div class="container">
+                    <div class="heading">
+                        <h4>ابحث عن رحلتك</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="plane-tab" data-toggle="tab" href="#plane" role="tab" aria-controls="plane" aria-selected="true">
+                                    <i class="fas fa-plane"></i>
+                                    <span>طيران</span>
+                                </a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="hotel-tab" data-toggle="tab" href="#hotel" role="tab" aria-controls="hotel" aria-selected="false">
+                                    <i class="fas fa-hotel"></i>
+                                    <span>الفنادق</span>
+                                </a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="car-tab" data-toggle="tab" href="#car" role="tab" aria-controls="car" aria-selected="false">
+                                    <i class="fas fa-car"></i>
+                                    <span>السيارات</span>
+                                </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="plane" role="tabpanel" aria-labelledby="plane-tab">
+    
+                                    <ul class="nav nav-tabs flex-shape" id="planeWay" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                          <a class="nav-link active" id="long-tab" data-toggle="tab" href="#long" role="tab" aria-controls="long" aria-selected="true">
+                                            <i class="fas fa-long-arrow-alt-right"></i>
+                                            <span>ذهاب فقط</span>
+                                          </a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <a class="nav-link" id="exchange-tab" data-toggle="tab" href="#exchange" role="tab" aria-controls="exchange" aria-selected="false">
+                                            <i class="fas fa-exchange-alt"></i>
+                                            <span>ذهاب وعودة</span>
+                                          </a>
+                                        </li>
+                                    </ul>
+    
+                                    <div class="tab-content" id="planeWayContent">
+                                        <div class="tab-pane fade show active" id="long" role="tabpanel" aria-labelledby="long-tab">
+                                            <form class="form-content">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-12 mb-5">
+                                                        <h4 class="title text-center">الدرجة</h4>
+                                                        <div class="btn-contain">
+                                                            <div class="from-check">
+                                                                <label class="size-lable">
+                                                                    <input type="checkbox" class="size-check"/>
+                                                                    <span>اقتصادي</span>
+                                                                </label>
+                                                            </div>
+                            
+                                                            <div class="from-check">
+                                                                <label class="size-lable">
+                                                                    <input type="checkbox" class="size-check"/>
+                                                                    <span>درجة اولي</span>
+                                                                </label>
+                                                            </div>
+                            
+                                                            <div class="from-check">
+                                                                <label class="size-lable">
+                                                                    <input type="checkbox" class="size-check"/>
+                                                                    <span>درجة ثانية</span>
+                                                                </label>
+                                                            </div>
+                            
+                                                            <div class="from-check">
+                                                                <label class="size-lable">
+                                                                    <input type="checkbox" class="size-check"/>
+                                                                    <span>درجة ثالثة</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 mb-3">
+                                                        <div class="form-group">
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                  <div class="input-group-text">
+                                                                    <img src="assets/images/fly.svg" alt="" /> 
+                                                                  </div>
+                                                                </div>
+                                                                <input type="text" class="form-control" placeholder="السفر من" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 mb-3">
+                                                        <div class="form-group">
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                  <div class="input-group-text">
+                                                                    <img src="assets/images/fly.svg" alt="" /> 
+                                                                  </div>
+                                                                </div>
+                                                                <input type="text" class="form-control" placeholder="السفر الي" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 mb-3">
+                                                        <div class="form-group">
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                  <div class="input-group-text">
+                                                                    <img src="assets/images/date.svg" alt="" /> 
+                                                                  </div>
+                                                                </div>
+                                                                <input  class="datepicker form-control" data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy" autocomplete="off" autofocus required />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 mb-3">
+                                                        <div class="form-group">
+                                                            <div class="input-group select">
+                                                                <div class="input-group-prepend">
+                                                                  <div class="input-group-text">
+                                                                    <img src="assets/images/user.svg" alt="" /> 
+                                                                  </div>
+                                                                </div>
+                                                                <select  class="form-control">
+                                                                    <option value="عدد البالغين فوق 16 سنة">
+                                                                        عدد البالغين فوق 16 سنة
+                                                                    </option>
+                                                                    <option value="1">
+                                                                        2
+                                                                    </option>
+                                                                    <option value="1">
+                                                                        3
+                                                                    </option>
+                                                                    <option value="1">
+                                                                        4
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 mb-3">
+                                                        <div class="form-group">
+                                                            <div class="input-group select">
+                                                                <div class="input-group-prepend">
+                                                                  <div class="input-group-text">
+                                                                    <img src="assets/images/user.svg" alt="" /> 
+                                                                  </div>
+                                                                </div>
+                                                                <select class="form-control" >
+                                                                    <option value="عدد الاطفال من سنتين الي 11 سنه">
+                                                                        عدد الاطفال من سنتين الي 11 سنه
+                                                                    </option>
+                                                                    <option value="1">
+                                                                        1
+                                                                    </option>
+                                                                    <option value="1">
+                                                                        2
+                                                                    </option>
+                                                                    <option value="1">
+                                                                        3
+                                                                    </option>
+                                                                    <option value="1">
+                                                                        4
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="col-lg-6 col-md-6 col-12 mb-3">
+                                                        <div class="form-group">
+                                                            <div class="input-group select">
+                                                                <div class="input-group-prepend">
+                                                                  <div class="input-group-text">
+                                                                    <img src="assets/images/user.svg" alt="" /> 
+                                                                  </div>
+                                                                </div>
+                                                                <select class="form-control" >
+                                                                    <option value="عدد الرضع">
+                                                                        عدد الرضع 
+                                                                    </option>
+                                                                    <option value="1">
+                                                                        1
+                                                                    </option>
+                                                                    <option value="1">
+                                                                        2
+                                                                    </option>
+                                                                    <option value="1">
+                                                                        3
+                                                                    </option>
+                                                                    <option value="1">
+                                                                        4
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 mt-4">
+                                                      <div class="btn-contain">
+                                                            <a href="booking.html" class="btn-content blue-color">
+                                                                البحث 
+                                                            </a>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+    
+                                        <div class="tab-pane fade" id="exchange" role="tabpanel" aria-labelledby="exchange-tab">
+                                            <form class="form-content">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-12 mb-5">
+                                                        <h4 class="title text-center">الدرجة</h4>
+                                                        <div class="btn-contain">
+                                                            <div class="from-check">
+                                                                <label class="size-lable">
+                                                                    <input type="checkbox" class="size-check"/>
+                                                                    <span>اقتصادي</span>
+                                                                </label>
+                                                            </div>
+                            
+                                                            <div class="from-check">
+                                                                <label class="size-lable">
+                                                                    <input type="checkbox" class="size-check"/>
+                                                                    <span>درجة اولي</span>
+                                                                </label>
+                                                            </div>
+                            
+                                                            <div class="from-check">
+                                                                <label class="size-lable">
+                                                                    <input type="checkbox" class="size-check"/>
+                                                                    <span>درجة ثانية</span>
+                                                                </label>
+                                                            </div>
+                            
+                                                            <div class="from-check">
+                                                                <label class="size-lable">
+                                                                    <input type="checkbox" class="size-check"/>
+                                                                    <span>درجة ثالثة</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 mb-3">
+                                                        <div class="form-group">
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                  <div class="input-group-text">
+                                                                    <img src="assets/images/fly.svg" alt="" /> 
+                                                                  </div>
+                                                                </div>
+                                                                <input type="text" class="form-control" placeholder="السفر من" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 mb-3">
+                                                        <div class="form-group">
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                  <div class="input-group-text">
+                                                                    <img src="assets/images/fly.svg" alt="" /> 
+                                                                  </div>
+                                                                </div>
+                                                                <input type="text" class="form-control" placeholder="السفر الي" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 mb-3">
+                                                        <div class="form-group">
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                  <div class="input-group-text">
+                                                                    <img src="assets/images/date.svg" alt="" /> 
+                                                                  </div>
+                                                                </div>
+                                                                <input  class="datepicker form-control" data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy" autocomplete="off" autofocus required />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 mb-3">
+                                                        <div class="form-group">
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                  <div class="input-group-text">
+                                                                    <img src="assets/images/date.svg" alt="" /> 
+                                                                  </div>
+                                                                </div>
+                                                                <input  class="datepicker form-control" data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy" autocomplete="off" autofocus required />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-6 col-12 mb-3">
+                                                        <div class="form-group">
+                                                            <div class="input-group select">
+                                                                <div class="input-group-prepend">
+                                                                  <div class="input-group-text">
+                                                                    <img src="assets/images/user.svg" alt="" /> 
+                                                                  </div>
+                                                                </div>
+                                                                <select class="form-control" >
+                                                                    <option value="عدد البالغين فوق 16 سنة">
+                                                                        عدد البالغين فوق 16 سنة
+                                                                    </option>
+                                                                    <option value="1">
+                                                                        1
+                                                                    </option>
+                                                                    <option value="1">
+                                                                        2
+                                                                    </option>
+                                                                    <option value="1">
+                                                                        3
+                                                                    </option>
+                                                                    <option value="1">
+                                                                        4
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-6 col-12 mb-3">
+                                                        <div class="form-group">
+                                                            <div class="input-group select">
+                                                                <div class="input-group-prepend">
+                                                                  <div class="input-group-text">
+                                                                    <img src="assets/images/user.svg" alt="" /> 
+                                                                  </div>
+                                                                </div>
+                                                                
+                                                                <select class="form-control" >
+                                                                    <option value="عدد الاطفال من سنتين الي 11 سنه">
+                                                                        عدد الاطفال من سنتين الي 11 سنه
+                                                                    </option>
+                                                                    <option value="1">
+                                                                        1
+                                                                    </option>
+                                                                    <option value="1">
+                                                                        2
+                                                                    </option>
+                                                                    <option value="1">
+                                                                        3
+                                                                    </option>
+                                                                    <option value="1">
+                                                                        4
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="col-lg-4 col-md-6 col-12 mb-3">
+                                                        <div class="form-group">
+                                                            <div class="input-group select">
+                                                                <div class="input-group-prepend">
+                                                                  <div class="input-group-text">
+                                                                    <img src="assets/images/user.svg" alt="" /> 
+                                                                  </div>
+                                                                </div>
+                                                               
+                                                                <select class="form-control" >
+                                                                    <option value="عدد الرضع">
+                                                                        عدد الرضع 
+                                                                    </option>
+                                                                    <option value="1">
+                                                                        1
+                                                                    </option>
+                                                                    <option value="1">
+                                                                        2
+                                                                    </option>
+                                                                    <option value="1">
+                                                                        3
+                                                                    </option>
+                                                                    <option value="1">
+                                                                        4
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 mt-4">
+                                                      <div class="btn-contain">
+                                                            <a href="index.html" class="btn-content blue-color">
+                                                                البحث 
+                                                            </a>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="tab-pane fade" id="hotel" role="tabpanel" aria-labelledby="hotel-tab">
+                                    <form class="form-content">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-12 mb-3">
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                          <div class="input-group-text">
+                                                            <img src="assets/images/location.svg" alt="" /> 
+                                                          </div>
+                                                        </div>
+                                                        <input type="text" class="form-control" placeholder="الاتجاه الى " />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-12 mb-3">
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                          <div class="input-group-text">
+                                                            <img src="assets/images/date.svg" alt="" /> 
+                                                          </div>
+                                                        </div>
+                                                        <input  class="datepicker form-control" data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy" autocomplete="off" autofocus required />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6 col-12 mb-3">
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                          <div class="input-group-text">
+                                                            <img src="assets/images/date.svg" alt="" /> 
+                                                          </div>
+                                                        </div>
+                                                        <input  class="datepicker form-control" data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy" autocomplete="off" autofocus required />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6 col-12 mb-3">
+                                                <div class="form-group">
+                                                    <div class="input-group select">
+                                                        <div class="input-group-prepend">
+                                                          <div class="input-group-text">
+                                                            <img src="assets/images/user.svg" alt="" /> 
+                                                          </div>
+                                                        </div>
+                                                        <select class="form-control" >
+                                                            <option value="عدد البالغين فوق 16 سنة">
+                                                                عدد البالغين فوق 16 سنة
+                                                            </option>
+                                                            <option value="1">
+                                                                1
+                                                            </option>
+                                                            <option value="1">
+                                                                2
+                                                            </option>
+                                                            <option value="1">
+                                                                3
+                                                            </option>
+                                                            <option value="1">
+                                                                4
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-lg-4 col-md-6 col-12 mb-3">
+                                                <div class="form-group">
+                                                    <div class="input-group select">
+                                                        <div class="input-group-prepend">
+                                                          <div class="input-group-text">
+                                                            <img src="assets/images/user.svg" alt="" /> 
+                                                          </div>
+                                                        </div>
+                                                        <select class="form-control" >
+                                                            <option value="عدد الرضع   ">
+                                                                عدد الرضع   
+                                                            </option>
+                                                            <option value="1">
+                                                                1
+                                                            </option>
+                                                            <option value="1">
+                                                                2
+                                                            </option>
+                                                            <option value="1">
+                                                                3
+                                                            </option>
+                                                            <option value="1">
+                                                                4
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                              <div class="btn-contain">
+                                                    <a href="index.html" class="btn-content blue-color">
+                                                        البحث 
+                                                    </a>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </form> 
+                                </div>
+    
+                                <div class="tab-pane fade" id="car" role="tabpanel" aria-labelledby="car-tab">
+                                    <form class="form-content">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-6 col-12 mb-3">
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                          <div class="input-group-text">
+                                                            <img src="assets/images/car.svg" alt="" /> 
+                                                          </div>
+                                                        </div>
+                                                        <input type="text" class="form-control" placeholder="موقع الاستلام  " />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6 col-12 mb-3">
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                          <div class="input-group-text">
+                                                            <img src="assets/images/car.svg" alt="" /> 
+                                                          </div>
+                                                        </div>
+                                                        <input type="text" class="form-control" placeholder="موقع التسليم" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6 col-12 mb-3">
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                          <div class="input-group-text">
+                                                            <img src="assets/images/date.svg" alt="" /> 
+                                                          </div>
+                                                        </div>
+                                                        <input  class="datepicker form-control" data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy" autocomplete="off" autofocus required />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                              <div class="btn-contain">
+                                                    <a href="index.html" class="btn-content blue-color">
+                                                        البحث 
+                                                    </a>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </form> 
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+       </main>
+        <!--start the intialize of js lib-->
+        <!--first intilize jquery lib-->
+        <script src="assets/js/lib/jquery4.js"></script>
+        <!--second intialize popper js lib-->
+        <script src="assets/js/lib/popper.js"></script>
+        <!--third intialize bootstrap js lib-->
+        <script src="assets/js/lib/bootstrap.js"></script>
+        <!--intialize owl coursel js lib -->
+        <script src="assets/js/lib/owl.carousel.min.js"></script>
+        <script src="assets/js/lib/datepicker.min.js"></script>
+        <!--end the intialize of js lib-->
+        <!--intialize main js file-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
