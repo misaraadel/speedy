@@ -2266,6 +2266,23 @@ header .owl-header .item::after {
   font-size: 20px;
   font-weight: 700;
   margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.products .box .flex-data h4 i {
+  color: #283a5e;
+  font-size: 20px;
+}
+
+.products .box .flex-data h4 span {
+  margin-right: 10px;
 }
 
 .products .box .flex-data p {
@@ -2273,5 +2290,35 @@ header .owl-header .item::after {
   font-size: 16px;
   margin: 0px;
   font-weight: 500;
+}
+
+.plane-booking {
+  width: 100%;
+  padding: 120px 0px 50px 0px;
+  background-color: #fefefe;
+}
+
+.plane-booking .data-content {
+  width: 100%;
+  padding: 20px 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px rgba(40, 58, 94, 0.1);
+          box-shadow: 0px 0px 10px rgba(40, 58, 94, 0.1);
+  border-radius: 10px;
+  height: 100%;
+}
+
+.plane-booking .data-content h4 {
+  color: #02a7ea;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.plane-booking .data-content p {
+  color: #888;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
