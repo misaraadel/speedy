@@ -1,9 +1,15 @@
 @media (max-width: 500px) {
-    .brand-name{
-        width: 120px;
+    .brand-name img{
+        width: 120px !important;
     }
     .btn-content {
         padding: 10px 20px;
         font-size: 16px;
+    }
+    .nav-content{
+        width: 100% !important;
+    }
+    .products .box .flex-data h4{
+        font-size: 15px !important;
     }
 }

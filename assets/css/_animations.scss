@@ -35,6 +35,15 @@
         animation-timing-function: ease-out;
     }
 }
+@keyframes smallbig{
+    0%, 100%{
+      transform: scale(1);
+    }
+  
+    50%{
+      transform: scale(0);
+    }
+}
 @keyframes spinner {
     0% {
         transform: rotate(0deg) scale3d(.8, .8, .8);

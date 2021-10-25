@@ -54,6 +54,12 @@ $(document).ready(function () {
         }, 100);
     });
     //start active navbar
+    $('.hamburger').click(function(){
+        $('.hamburger').toggleClass('active');
+        $('.nav-content').toggleClass('active-nav');
+        $('body').toggleClass('overflowNone')
+    });
+    //start active navbar
     $('.add-popup').click(function(){
         $('.poup-window').addClass('acitve-popup');
         $('body').addClass('overflowNone');
@@ -84,7 +90,7 @@ $(document).ready(function () {
         items:1
     });
     //partner slider 
-    $('.owl-partner').owlCarousel({
+    $('.owl-cards').owlCarousel({
         rtl: true,
         loop:false,
         margin: 20,
@@ -110,7 +116,7 @@ $(document).ready(function () {
                 items:2
             },
             1000:{
-                items:5
+                items:3
             }
         }
     });
