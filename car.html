@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--start the meta tags-->
+        <!--meta tag for utf-8 code for ar and en-->
+        <meta charset="utf-8">
+        <!--meta tag for description of website-->
+        <meta name="description" content="....">
+        <!--meta tag for the author of website-->
+        <meta name="author" content="misara adel">
+        <!--meta tag for make website compatible with all screen devices-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--end the meta tags-->
+        <!--title tag for website appear in tab-->
+        <title>speedy booking</title>
+        <!-- the style link for image icon-->
+        <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon"/>
+        <!--start the intialize of css library files-->
+        <!--the intilize of fontawsome lib-->
+        <link rel="stylesheet" href="assets/css/lib/all.min.css">
+        <!--the intilize of animate lib used with wow js lib-->
+        <link rel="stylesheet" href="assets/css/lib/datepicker.min.css">
+        <!--the intilize of bootstrap en version lib-->
+        <!-- <link rel="stylesheet" href="assets/css/lib/bootstrap.css"> -->
+        <!--the intilize of bootstrap ar version lib-->
+        <link rel="stylesheet" href="assets/css/lib/bootstrap-rtl.min.css">
+        <!--the intilize of owl carousel lib-->
+        <link rel="stylesheet" href="assets/css/lib/owl.carousel.min.css">
+        <!--the intilize of dots that appear with owl carousel -->
+        <link rel="stylesheet" href="assets/css/lib/owl.theme.default.css">
+        <!--end the intialize of css library files-->
+        <!--start the intilalize of css files -->
+        <!--the stylesheet en file-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!--the media file screen -->
+        <link rel="stylesheet" href="assets/css/media.css">
+        <!--end the intilalize of css files-->
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="container">
+                <div class="content">
+                    <a href="login_in.html" class="btn-content blue-color">
+                        تسجيل دخول
+                    </a>
+                    <a href="#" class="brand-name">
+                        <img src="assets/images/logo.png" alt="" />
+                    </a>
+                    <div class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                    <ul class="nav-content">
+                        <li>
+                            <a href="#" class="link">
+                                <span class="title">
+                                    تغير العملة
+                                </span>
+                                <span class="data">
+                                    Dolar
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">
+                                <span class="title">
+                                    تغير اللغة
+                                </span>
+                                <span class="data">
+                                    EN
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login_in.html" class="btn-content blue-color">
+                                تسجيل الدخول لقسم الاضافة
+                            </a>
+                        </li>
+                    </ul>
+                </div>  
+            </div>
+            
+        </nav>
+        <main>
+            <section class="data-time">
+                <div class="container">
+                    <div class="data-content">
+                        <a href="#" class="arrow-content">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <p>
+                            <span>القاهرة</span>
+                            <span>
+                                12-12-2021
+                            </span>
+                            <span>
+                                13-12-2021
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="sort-data">
+                <div class="container">
+                    <div class="heading">
+                        <h4>
+                            نتائج البحث عن السيارات
+                        </h4>
+                    </div>
+                    <ul class="sort-content">
+                        <li class="dropdown filter car">
+                            <a class="link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-filter"></i>
+                                <span>
+                                    فلتر
+                                </span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <form>
+                                    <h4>نوع الرحلة</h4>
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            ذهاب 
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                        <label class="form-check-label" for="defaultCheck2">
+                                            ذهاب وعودة
+                                        </label>
+                                    </div>
+                                    <h4>متاح في فتره</h4>
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            الصباح 
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                        <label class="form-check-label" for="defaultCheck2">
+                                            المساء
+                                        </label>
+                                    </div>
+                                    <h4>مواصفات السياره</h4>
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            سائق 
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                        <label class="form-check-label" for="defaultCheck2">
+                                            تكيف
+                                        </label>
+                                    </div>
+                                    <h4>تصنيف السياره</h4>
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            صغيره 4 راكب 
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                        <label class="form-check-label" for="defaultCheck2">
+                                            متوسطه 5 راكب
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                        <label class="form-check-label" for="defaultCheck2">
+                                            كبيرة 5 راكب
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                        <label class="form-check-label" for="defaultCheck2">
+                                            عائلية 7 راكب
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                        <label class="form-check-label" for="defaultCheck2">
+                                            باص 15 راكب
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                        <label class="form-check-label" for="defaultCheck2">
+                                            باص 30 راكب
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                        <label class="form-check-label" for="defaultCheck2">
+                                            باص 49 راكب
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="products">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12 mb-4">
+                            <div class="box">
+                                <a href="booking.html" class="btn-content blue-color">
+                                    احجز الان    
+                                </a>
+                                <img src="assets/images/car.svg" alt="">
+                                <h4 class="head">
+                                    نوع السياره
+                                </h4>
+                                <div class="flex-data">
+                                    <h4>
+                                        نوع الرحلة
+                                    </h4>
+                                    <p>
+                                       ذهاب وعودة
+                                    </p>
+                                </div>
+                                <div class="flex-data">
+                                    <h4>
+                                        متاح في
+                                    </h4>
+                                    <p>
+                                        الصباح
+                                    </p>
+                                </div>
+                                <div class="flex-data">
+                                    <h4>
+                                        مواصفات السيارة
+                                    </h4>
+                                    <p>
+                                        سائق + تكيف
+                                    </p>
+                                </div>
+                                <div class="flex-data">
+                                    <h4>
+                                        تصنيف السياره
+                                    </h4>
+                                    <p>
+                                       كبيره 5 راكب
+                                    </p>
+                                </div>
+                                <div class="flex-data">
+                                    <h4>
+                                        السعر
+                                    </h4>
+                                    <p>
+                                      150 ر.س
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12 mb-4">
+                            <div class="box">
+                                <a href="booking.html" class="btn-content blue-color">
+                                    احجز الان    
+                                </a>
+                                <img src="assets/images/car.svg" alt="">
+                                <h4 class="head">
+                                    نوع السياره
+                                </h4>
+                                <div class="flex-data">
+                                    <h4>
+                                        نوع الرحلة
+                                    </h4>
+                                    <p>
+                                       ذهاب وعودة
+                                    </p>
+                                </div>
+                                <div class="flex-data">
+                                    <h4>
+                                        متاح في
+                                    </h4>
+                                    <p>
+                                        الصباح
+                                    </p>
+                                </div>
+                                <div class="flex-data">
+                                    <h4>
+                                        مواصفات السيارة
+                                    </h4>
+                                    <p>
+                                        سائق + تكيف
+                                    </p>
+                                </div>
+                                <div class="flex-data">
+                                    <h4>
+                                        تصنيف السياره
+                                    </h4>
+                                    <p>
+                                       كبيره 5 راكب
+                                    </p>
+                                </div>
+                                <div class="flex-data">
+                                    <h4>
+                                        السعر
+                                    </h4>
+                                    <p>
+                                      150 ر.س
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12 mb-4">
+                            <div class="box">
+                                <a href="booking.html" class="btn-content blue-color">
+                                    احجز الان    
+                                </a>
+                                <img src="assets/images/car.svg" alt="">
+                                <h4 class="head">
+                                    نوع السياره
+                                </h4>
+                                <div class="flex-data">
+                                    <h4>
+                                        نوع الرحلة
+                                    </h4>
+                                    <p>
+                                       ذهاب وعودة
+                                    </p>
+                                </div>
+                                <div class="flex-data">
+                                    <h4>
+                                        متاح في
+                                    </h4>
+                                    <p>
+                                        الصباح
+                                    </p>
+                                </div>
+                                <div class="flex-data">
+                                    <h4>
+                                        مواصفات السيارة
+                                    </h4>
+                                    <p>
+                                        سائق + تكيف
+                                    </p>
+                                </div>
+                                <div class="flex-data">
+                                    <h4>
+                                        تصنيف السياره
+                                    </h4>
+                                    <p>
+                                       كبيره 5 راكب
+                                    </p>
+                                </div>
+                                <div class="flex-data">
+                                    <h4>
+                                        السعر
+                                    </h4>
+                                    <p>
+                                      150 ر.س
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12 mb-4">
+                            <div class="box">
+                                <a href="booking.html" class="btn-content blue-color">
+                                    احجز الان    
+                                </a>
+                                <img src="assets/images/car.svg" alt="">
+                                <h4 class="head">
+                                    نوع السياره
+                                </h4>
+                                <div class="flex-data">
+                                    <h4>
+                                        نوع الرحلة
+                                    </h4>
+                                    <p>
+                                       ذهاب وعودة
+                                    </p>
+                                </div>
+                                <div class="flex-data">
+                                    <h4>
+                                        متاح في
+                                    </h4>
+                                    <p>
+                                        الصباح
+                                    </p>
+                                </div>
+                                <div class="flex-data">
+                                    <h4>
+                                        مواصفات السيارة
+                                    </h4>
+                                    <p>
+                                        سائق + تكيف
+                                    </p>
+                                </div>
+                                <div class="flex-data">
+                                    <h4>
+                                        تصنيف السياره
+                                    </h4>
+                                    <p>
+                                       كبيره 5 راكب
+                                    </p>
+                                </div>
+                                <div class="flex-data">
+                                    <h4>
+                                        السعر
+                                    </h4>
+                                    <p>
+                                      150 ر.س
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12 mb-4">
+                            <div class="box">
+                                <a href="booking.html" class="btn-content blue-color">
+                                    احجز الان    
+                                </a>
+                                <img src="assets/images/car.svg" alt="">
+                                <h4 class="head">
+                                    نوع السياره
+                                </h4>
+                                <div class="flex-data">
+                                    <h4>
+                                        نوع الرحلة
+                                    </h4>
+                                    <p>
+                                       ذهاب وعودة
+                                    </p>
+                                </div>
+                                <div class="flex-data">
+                                    <h4>
+                                        متاح في
+                                    </h4>
+                                    <p>
+                                        الصباح
+                                    </p>
+                                </div>
+                                <div class="flex-data">
+                                    <h4>
+                                        مواصفات السيارة
+                                    </h4>
+                                    <p>
+                                        سائق + تكيف
+                                    </p>
+                                </div>
+                                <div class="flex-data">
+                                    <h4>
+                                        تصنيف السياره
+                                    </h4>
+                                    <p>
+                                       كبيره 5 راكب
+                                    </p>
+                                </div>
+                                <div class="flex-data">
+                                    <h4>
+                                        السعر
+                                    </h4>
+                                    <p>
+                                      150 ر.س
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12 mb-4">
+                            <div class="box">
+                                <a href="booking.html" class="btn-content blue-color">
+                                    احجز الان    
+                                </a>
+                                <img src="assets/images/car.svg" alt="">
+                                <h4 class="head">
+                                    نوع السياره
+                                </h4>
+                                <div class="flex-data">
+                                    <h4>
+                                        نوع الرحلة
+                                    </h4>
+                                    <p>
+                                       ذهاب وعودة
+                                    </p>
+                                </div>
+                                <div class="flex-data">
+                                    <h4>
+                                        متاح في
+                                    </h4>
+                                    <p>
+                                        الصباح
+                                    </p>
+                                </div>
+                                <div class="flex-data">
+                                    <h4>
+                                        مواصفات السيارة
+                                    </h4>
+                                    <p>
+                                        سائق + تكيف
+                                    </p>
+                                </div>
+                                <div class="flex-data">
+                                    <h4>
+                                        تصنيف السياره
+                                    </h4>
+                                    <p>
+                                       كبيره 5 راكب
+                                    </p>
+                                </div>
+                                <div class="flex-data">
+                                    <h4>
+                                        السعر
+                                    </h4>
+                                    <p>
+                                      150 ر.س
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--start the intialize of js lib-->
+        <!--first intilize jquery lib-->
+        <script src="assets/js/lib/jquery4.js"></script>
+        <!--second intialize popper js lib-->
+        <script src="assets/js/lib/popper.js"></script>
+        <!--third intialize bootstrap js lib-->
+        <script src="assets/js/lib/bootstrap.js"></script>
+        <!--intialize owl coursel js lib -->
+        <script src="assets/js/lib/owl.carousel.min.js"></script>
+        <script src="assets/js/lib/datepicker.min.js"></script>
+        <!--end the intialize of js lib-->
+        <!--intialize main js file-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

@@ -2109,6 +2109,13 @@ header .owl-header .item::after {
   transition: all .2s linear;
 }
 
+.sort-data .sort-content li .dropdown-menu h4 {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
 .sort-data .sort-content li .dropdown-menu .dropdown-item {
   color: #000;
   font-size: 15px;
@@ -2120,6 +2127,18 @@ header .owl-header .item::after {
   opacity: 1 !important;
   -webkit-transform: translateY(70px) !important;
           transform: translateY(70px) !important;
+  visibility: visible !important;
+}
+
+.sort-data .sort-content li.car .dropdown-menu {
+  -webkit-transform: translateY(100px) translateX(-160px) !important;
+          transform: translateY(100px) translateX(-160px) !important;
+}
+
+.sort-data .sort-content li.car .dropdown-menu.show {
+  opacity: 1 !important;
+  -webkit-transform: translateY(70px) translateX(-160px) !important;
+          transform: translateY(70px) translateX(-160px) !important;
   visibility: visible !important;
 }
 
@@ -2188,6 +2207,14 @@ header .owl-header .item::after {
   position: absolute;
   top: 20px;
   left: 20px;
+}
+
+.products .box img {
+  width: 100px;
+  height: 70px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 20px;
 }
 
 .products .box .head {
