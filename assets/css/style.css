@@ -2101,8 +2101,8 @@ header .owl-header .item::after {
   visibility: hidden;
   -webkit-transform: translateY(100px) !important;
           transform: translateY(100px) !important;
-  -webkit-box-shadow: 0px 0px 10px rgba(2, 167, 234, 0.05);
-          box-shadow: 0px 0px 10px rgba(2, 167, 234, 0.05);
+  -webkit-box-shadow: 0px 0px 10px rgba(2, 167, 234, 0.24);
+          box-shadow: 0px 0px 10px rgba(2, 167, 234, 0.24);
   border-radius: 5px !important;
   border: none;
   -webkit-transition: all .2s linear;
