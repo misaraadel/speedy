@@ -96,7 +96,7 @@ $(document).ready(function () {
         margin: 20,
         nav:false,
         dots: true,
-        autoplay: true,
+        autoplay: false,
         touchDrag  : true,
 		mouseDrag  : true,
 		autoWidth: false,

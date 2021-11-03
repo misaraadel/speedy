@@ -53,6 +53,20 @@
                     </div>
                     <ul class="nav-content">
                         <li>
+                            <a href="questions.html" class="link">
+                                <span class="title">
+                                    الاسئلة والاجوبة
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="polices.html" class="link">
+                                <span class="title">
+                                  سياسة الموقع
+                                </span>
+                            </a>
+                        </li>
+                        <li>
                             <a href="#" class="link">
                                 <span class="title">
                                     تغير العملة
@@ -77,11 +91,147 @@
                                 تسجيل الدخول لقسم الاضافة
                             </a>
                         </li>
+                        <li>
+                            <button type="button" class="btn-content blue-color" data-toggle="modal" data-target="#workModalLong">
+                                كيف تعمل معنا
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn-content blue-color"  data-toggle="modal" data-target="#exampleModalLong">
+                                ارسال استفسار
+                            </button>
+                        </li>
                     </ul>
                 </div>  
             </div>
-            
         </nav>
+        <div class="modal fade" id="workModalLong" tabindex="-1" role="dialog" aria-labelledby="workModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="workModalLongTitle">كيف تعمل معنا</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 mb-2">
+                           <div class="content">
+                                <a href="index.html" class="brand-name">
+                                    <img src="assets/images/logo.jpg" alt="" />
+                                </a>
+                                <p>
+                                   تواصل معنا عبر 
+                                    <a href="mailto:info@speekybooking.nat" class="link">
+                                        info@speekybooking.nat
+                                    </a>
+                                    وسيقوم ممثلونا بالتواصل معكم في اقرب وقت ممكن 
+                                </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn-content blue-color" data-dismiss="modal">
+                      غلق 
+                  </button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">ارسل استفسارك</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-content">
+                        <div class="row">
+                            <div class="col-12 mb-2">
+                                <div class="content">
+                                    <a href="index.html" class="brand-name">
+                                        <img src="assets/images/logo.jpg" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-2">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                          <div class="input-group-text">
+                                            <img src="assets/images/email.svg" alt="" /> 
+                                          </div>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder=" البريد الالكتروني " />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-2">
+                                <div class="form-group">
+                                    <div class="input-group ">
+                                        <div class="input-group-prepend">
+                                          <div class="input-group-text">
+                                            <img src="assets/images/pen.svg" alt="" /> 
+                                          </div>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="عنوان الطلب" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-2">
+                                <div class="form-group">
+                                    <div class="input-group select">
+                                        <div class="input-group-prepend">
+                                          <div class="input-group-text">
+                                            <img src="assets/images/pen.svg" alt="" /> 
+                                          </div>
+                                        </div>
+                                       
+                                        <select class="form-control" >
+                                            <option value="نوع الرسال">
+                                                نوع الرسال 
+                                            </option>
+                                            <option value="مشكلة">
+                                                مشكلة
+                                            </option>
+                                            <option value="طلب">
+                                                طلب
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <div class="input-group textarea">
+                                        <div class="input-group-prepend">
+                                          <div class="input-group-text">
+                                            <img src="assets/images/pen.svg" alt="" /> 
+                                          </div>
+                                        </div>
+                                        <textarea class="form-control" placeholder="تفاصيل الرسالة"  cols="30" rows="10"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn-content blue-color" data-dismiss="modal">
+                      الغاء
+                  </button>
+                  <button type="button" class="btn-content blue-color">
+                      ارسال 
+                  </button>
+                </div>
+              </div>
+            </div>
+        </div>
        <ul class="bottom-nav">
             <li class="bottom-nav-item">
                 <a href="index.html" class="bottom-nav-link">
@@ -224,6 +374,9 @@
                 </div>
             </section>
        </main>
+       <a href="#" class="life-chat">
+            <img src="assets/images/chat.svg" alt="">
+        </a>
        <!--start the intialize of js lib-->
         <!--first intilize jquery lib-->
         <script src="assets/js/lib/jquery4.js"></script>

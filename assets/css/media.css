@@ -12,4 +12,20 @@
     .products .box .flex-data h4{
         font-size: 15px !important;
     }
+    .sort-data .sort-content li .dropdown-menu{
+     transform: translateY(100px) translateX(-50px)  !important
+    }
+    .sort-data .sort-content li .dropdown-menu.show{
+        transform: translateY(70px) translateX(-50px) !important
+    }
+    .sort-data .sort-content li.car .dropdown-menu{
+        transform: translateY(100px) translateX(-130px)  !important
+    }
+    .sort-data .sort-content li.car .dropdown-menu.show{
+        
+        transform: translateY(60px) translateX(-130px) !important
+    }
+    .sort-data .sort-content li.car .dropdown-menu{
+        width: 250px !important;
+    }
 }

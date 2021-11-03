@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--start the meta tags-->
+        <!--meta tag for utf-8 code for ar and en-->
+        <meta charset="utf-8">
+        <!--meta tag for description of website-->
+        <meta name="description" content="....">
+        <!--meta tag for the author of website-->
+        <meta name="author" content="misara adel">
+        <!--meta tag for make website compatible with all screen devices-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--end the meta tags-->
+        <!--title tag for website appear in tab-->
+        <title>speedy booking</title>
+        <!-- the style link for image icon-->
+        <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon"/>
+        <!--start the intialize of css library files-->
+        <!--the intilize of fontawsome lib-->
+        <link rel="stylesheet" href="assets/css/lib/all.min.css">
+        <!--the intilize of animate lib used with wow js lib-->
+        <link rel="stylesheet" href="assets/css/lib/datepicker.min.css">
+        <!--the intilize of bootstrap en version lib-->
+        <!-- <link rel="stylesheet" href="assets/css/lib/bootstrap.css"> -->
+        <!--the intilize of bootstrap ar version lib-->
+        <link rel="stylesheet" href="assets/css/lib/bootstrap-rtl.min.css">
+        <!--the intilize of owl carousel lib-->
+        <link rel="stylesheet" href="assets/css/lib/owl.carousel.min.css">
+        <!--the intilize of dots that appear with owl carousel -->
+        <link rel="stylesheet" href="assets/css/lib/owl.theme.default.css">
+        <!--end the intialize of css library files-->
+        <!--start the intilalize of css files -->
+        <!--the stylesheet en file-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!--the media file screen -->
+        <link rel="stylesheet" href="assets/css/media.css">
+        <!--end the intilalize of css files-->
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="container">
+                <div class="content">
+                    <a href="login_in.html" class="btn-content blue-color">
+                        تسجيل دخول
+                    </a>
+                    <a href="#" class="brand-name">
+                        <img src="assets/images/logo.jpg" alt="" />
+                    </a>
+                    <div class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                    <ul class="nav-content">
+                        <li>
+                            <a href="questions.html" class="link">
+                                <span class="title">
+                                    الاسئلة والاجوبة
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="polices.html" class="link">
+                                <span class="title">
+                                  سياسة الموقع
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">
+                                <span class="title">
+                                    تغير العملة
+                                </span>
+                                <span class="data">
+                                    Dolar
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">
+                                <span class="title">
+                                    تغير اللغة
+                                </span>
+                                <span class="data">
+                                    EN
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login_in.html" class="btn-content blue-color">
+                                تسجيل الدخول لقسم الاضافة
+                            </a>
+                        </li>
+                        <li>
+                            <button type="button" class="btn-content blue-color" data-toggle="modal" data-target="#workModalLong">
+                                كيف تعمل معنا
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn-content blue-color"  data-toggle="modal" data-target="#exampleModalLong">
+                                ارسال استفسار
+                            </button>
+                        </li>
+                    </ul>
+                </div>  
+            </div>
+        </nav>
+        <div class="modal fade" id="workModalLong" tabindex="-1" role="dialog" aria-labelledby="workModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="workModalLongTitle">كيف تعمل معنا</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 mb-2">
+                           <div class="content">
+                                <a href="index.html" class="brand-name">
+                                    <img src="assets/images/logo.jpg" alt="" />
+                                </a>
+                                <p>
+                                   تواصل معنا عبر 
+                                    <a href="mailto:info@speekybooking.nat" class="link">
+                                        info@speekybooking.nat
+                                    </a>
+                                    وسيقوم ممثلونا بالتواصل معكم في اقرب وقت ممكن 
+                                </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn-content blue-color" data-dismiss="modal">
+                      غلق 
+                  </button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">ارسل استفسارك</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-content">
+                        <div class="row">
+                            <div class="col-12 mb-2">
+                                <div class="content">
+                                    <a href="index.html" class="brand-name">
+                                        <img src="assets/images/logo.jpg" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-2">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                          <div class="input-group-text">
+                                            <img src="assets/images/email.svg" alt="" /> 
+                                          </div>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder=" البريد الالكتروني " />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-2">
+                                <div class="form-group">
+                                    <div class="input-group ">
+                                        <div class="input-group-prepend">
+                                          <div class="input-group-text">
+                                            <img src="assets/images/pen.svg" alt="" /> 
+                                          </div>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="عنوان الطلب" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-2">
+                                <div class="form-group">
+                                    <div class="input-group select">
+                                        <div class="input-group-prepend">
+                                          <div class="input-group-text">
+                                            <img src="assets/images/pen.svg" alt="" /> 
+                                          </div>
+                                        </div>
+                                       
+                                        <select class="form-control" >
+                                            <option value="نوع الرسال">
+                                                نوع الرسال 
+                                            </option>
+                                            <option value="مشكلة">
+                                                مشكلة
+                                            </option>
+                                            <option value="طلب">
+                                                طلب
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <div class="input-group textarea">
+                                        <div class="input-group-prepend">
+                                          <div class="input-group-text">
+                                            <img src="assets/images/pen.svg" alt="" /> 
+                                          </div>
+                                        </div>
+                                        <textarea class="form-control" placeholder="تفاصيل الرسالة"  cols="30" rows="10"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn-content blue-color" data-dismiss="modal">
+                      الغاء
+                  </button>
+                  <button type="button" class="btn-content blue-color">
+                      ارسال 
+                  </button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <main>
+            <section class="data-time">
+                <div class="container">
+                    <div class="data-content">
+                        <a href="#" class="arrow-content">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <p>
+                            أسئلة وأجوبة
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="questions">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-12 mb-5">
+                            <div class="image-content">
+                                <img src="assets/images/question.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-12 mb-5">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        هنا السؤال 
+                                    </button>
+                                    </h2>
+                                </div>
+                            
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p class="answer">
+                                            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد
+                                        </p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            هنا السؤال
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p class="answer">
+                                            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد    
+                                        </p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        هنا السؤال
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p class="answer">
+                                            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد    
+                                        </p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingFour">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            هنا السؤال
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p class="answer">
+                                                هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد    
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--start the intialize of js lib-->
+        <!--first intilize jquery lib-->
+        <script src="assets/js/lib/jquery4.js"></script>
+        <!--second intialize popper js lib-->
+        <script src="assets/js/lib/popper.js"></script>
+        <!--third intialize bootstrap js lib-->
+        <script src="assets/js/lib/bootstrap.js"></script>
+        <!--intialize owl coursel js lib -->
+        <script src="assets/js/lib/owl.carousel.min.js"></script>
+        <script src="assets/js/lib/datepicker.min.js"></script>
+        <!--end the intialize of js lib-->
+        <!--intialize main js file-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

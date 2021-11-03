@@ -1244,6 +1244,28 @@ ul {
   font-size: 20px;
 }
 
+.form-content .input-group.textarea {
+  height: 100px;
+}
+
+.form-content .input-group.textarea .input-group-prepend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
 .form-content .from-check {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1293,6 +1315,7 @@ ul {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  background-color: #fff;
   border: 1px solid #02a7ea;
   position: relative;
   margin: 10px 0px;
@@ -1379,7 +1402,7 @@ ul {
 .form-data {
   width: 100%;
   padding: 0px 0px 0px 0px;
-  background-color: #f7f7f7;
+  background-color: rgba(2, 167, 234, 0.4);
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1464,9 +1487,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1476,7 +1499,7 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 999;
   -webkit-box-shadow: 0px 4px 6px rgba(40, 58, 94, 0.1);
           box-shadow: 0px 4px 6px rgba(40, 58, 94, 0.1);
 }
@@ -1551,6 +1574,9 @@ ul {
   position: absolute;
   top: 70px;
   left: -100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-bottom: 100px !important;
   -webkit-transition: all .4s linear;
   transition: all .4s linear;
   z-index: 99;
@@ -1595,6 +1621,8 @@ ul {
 
 .navbar .content .nav-content li .btn-content {
   margin: auto;
+  width: 90% !important;
+  text-align: center;
 }
 
 .heading {
@@ -1604,7 +1632,7 @@ ul {
 }
 
 .heading h4 {
-  color: #02a7ea;
+  color: #000;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 0px;
@@ -1683,7 +1711,7 @@ ul {
   -ms-flex-line-pack: center;
       align-content: center;
   border-radius: 50px 50px 0px 0px;
-  z-index: 9999 !important;
+  z-index: 998 !important;
 }
 
 .bottom-nav .bottom-nav-item .bottom-nav-link {
@@ -1723,7 +1751,8 @@ ul {
 .tower {
   width: 100%;
   padding: 100px 0px;
-  background-color: #fff;
+  min-height: 100vh;
+  background-color: rgba(2, 167, 234, 0.4);
 }
 
 .tower .heading {
@@ -1806,6 +1835,7 @@ ul {
   width: 100px;
   height: 100px;
   border-radius: 10px;
+  margin-top: 20px;
 }
 
 .tower .nav-tabs .nav-item .nav-link i {
@@ -1997,12 +2027,13 @@ header .owl-header .item::after {
 .data-time {
   width: 100%;
   padding: 100px 0px 40px 0px;
+  background-color: rgba(2, 167, 234, 0.4);
 }
 
 .data-time .data-content {
   width: 100%;
   padding: 20px 14px;
-  background-color: #fff;
+  background-color: white;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 10px rgba(40, 58, 94, 0.1);
           box-shadow: 0px 0px 10px rgba(40, 58, 94, 0.1);
@@ -2041,6 +2072,7 @@ header .owl-header .item::after {
 
 .sort-data {
   width: 100%;
+  background-color: rgba(2, 167, 234, 0.4);
 }
 
 .sort-data .sort-content {
@@ -2107,6 +2139,7 @@ header .owl-header .item::after {
   border: none;
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
+  z-index: 99 !important;
 }
 
 .sort-data .sort-content li .dropdown-menu h4 {
@@ -2120,7 +2153,12 @@ header .owl-header .item::after {
   color: #000;
   font-size: 15px;
   font-weight: 500;
-  margin-bottom: 20px;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.sort-data .sort-content li .dropdown-menu .dropdown-item:last-child {
+  border: none;
 }
 
 .sort-data .sort-content li .dropdown-menu.show {
@@ -2191,6 +2229,7 @@ header .owl-header .item::after {
 .products {
   width: 100%;
   padding: 50px 0px;
+  background-color: rgba(2, 167, 234, 0.4);
 }
 
 .products .box {
@@ -2322,7 +2361,7 @@ header .owl-header .item::after {
 .plane-booking {
   width: 100%;
   padding: 120px 0px 50px 0px;
-  background-color: #fefefe;
+  background-color: rgba(2, 167, 234, 0.4);
 }
 
 .plane-booking .data-content {
@@ -2347,5 +2386,206 @@ header .owl-header .item::after {
   font-size: 15px;
   font-weight: 500;
   margin-bottom: 20px;
+}
+
+.modal h5 {
+  color: #02a7ea;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.modal .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.modal .content p {
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.modal .content p .link {
+  margin: 0px 10px;
+  color: #02a7ea;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.modal img {
+  width: 120px;
+  height: 60px;
+  margin: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.life-chat {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 998;
+  background-color: #02a7ea;
+}
+
+.life-chat img {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(62deg) brightness(105%) contrast(103%);
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(62deg) brightness(105%) contrast(103%);
+}
+
+.polices {
+  width: 100%;
+  padding: 30px 0px;
+  background-color: rgba(2, 167, 234, 0.4);
+}
+
+.polices .content {
+  width: 100%;
+  padding: 30px 10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.polices .content h4 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.polices .content p {
+  color: #888;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 2.5rem;
+  margin: 20px 0px;
+}
+
+.questions {
+  width: 100%;
+  padding: 40px 0px;
+  background-color: rgba(2, 167, 234, 0.4);
+}
+
+.questions .card, .questions .card-header {
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  margin-bottom: 20px;
+}
+
+.questions .card {
+  -webkit-box-shadow: 0px 2px 25px 0px rgba(35, 97, 146, 0.18);
+          box-shadow: 0px 2px 25px 0px rgba(35, 97, 146, 0.18);
+}
+
+.questions .card .btn-link {
+  width: 100%;
+  height: 60px;
+  font-weight: 500;
+  text-align: right;
+  text-decoration: none;
+  position: relative;
+  color: #333;
+  background-color: #f7f7f7;
+  font-size: 15px;
+}
+
+.questions .card .btn-link::after {
+  content: '\2212';
+  position: absolute;
+  width: 35px;
+  font-size: 25px;
+  border-radius: 5px;
+  text-align: center;
+  left: 15px;
+  top: 11px;
+  background-color: rgba(35, 97, 146, 0.4);
+}
+
+.questions .card .btn-link::before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-color: #f7f7f7;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: 35px;
+  top: 46px;
+  border-radius: 4px;
+}
+
+.questions .card .btn-link.collapsed::after {
+  content: '\002B';
+}
+
+.questions .card .card-body {
+  background-color: rgba(247, 247, 247, 0.4);
+}
+
+.questions .card .card-body .answer {
+  font-size: 15px;
+  font-weight: 400;
+  color: #333;
+  line-height: 2rem;
+  text-align: justify;
+}
+
+.questions .image-content {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.questions .image-content img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.questions .custom-btn {
+  margin: auto;
+}
+
+.questions .custom-btn::after, .questions .custom-btn::before {
+  background-color: #fff !important;
 }
 /*# sourceMappingURL=style.css.map */

@@ -70,6 +70,16 @@
                 font-size: 20px;
             }
         }
+        &.textarea{
+            height: 100px;
+            .input-group-prepend{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                align-content: center;
+            }
+        }
     }
     .from-check{
         display: flex;
@@ -100,6 +110,7 @@
             display: flex;
             align-items: center;
             align-content: center;
+            background-color: #fff;
             border: 1px solid #02a7ea;
             position: relative;
             margin: 10px 0px;
@@ -236,7 +247,7 @@
 .form-data{
     width: 100%;
     padding: 0px 0px 0px 0px;
-    background-color: #f7f7f7;
+    background-color: rgba($color: #02a7ea , $alpha: .4);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -292,14 +303,14 @@
 .navbar{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     align-content: center;
     background-color: #fff;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 999;
     box-shadow: 0px 4px 6px rgba($color: #283a5e , $alpha: .10);
     .hamburger{
         transition: all 0.3s ease-in-out;
@@ -349,6 +360,9 @@
             position: absolute;
             top: 70px;
             left: -100%;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            padding-bottom: 100px !important;
             transition: all .4s linear;
             z-index: 99;
             background-color: #fff;
@@ -377,6 +391,8 @@
                 }
                 .btn-content{
                     margin: auto;
+                    width: 90% !important;
+                    text-align: center;
                 }
             }
         }
@@ -387,7 +403,7 @@
     margin-bottom: 20px;
     text-align: center;
     h4{
-        color: #02a7ea;
+        color: #000;
         font-size: 20px;
         font-weight: 700;
         margin-bottom: 0px;
@@ -447,7 +463,7 @@
     align-items: center;
     align-content: center;
     border-radius: 50px 50px 0px 0px;
-    z-index: 9999 !important;
+    z-index: 998 !important;
     .bottom-nav-item{
         .bottom-nav-link{
             display: flex;
@@ -476,7 +492,8 @@
 .tower{
     width: 100%;
     padding: 100px 0px;
-    background-color: #fff;
+    min-height: 100vh;
+    background-color: rgba($color: #02a7ea , $alpha: .4);
     .heading{
         width: 100%;
         text-align: center;
@@ -528,6 +545,7 @@
                 width: 100px;
                 height: 100px;
                 border-radius: 10px;
+                margin-top: 20px;
                 i{
                     font-size: 20px;
                     color: #02a7ea;
@@ -676,10 +694,11 @@ header{
 .data-time{
     width: 100%;
     padding: 100px 0px 40px 0px;
+    background-color: rgba($color: #02a7ea , $alpha: .4);
     .data-content{
         width: 100%;
         padding: 20px 14px;
-        background-color: #fff;
+        background-color: rgba($color: #FFF , $alpha: 1);
         border-radius: 10px;
         box-shadow: 0px 0px 10px rgba($color: #283a5e , $alpha: .1);
         display: flex;
@@ -708,6 +727,7 @@ header{
 }
 .sort-data{
     width: 100%;
+    background-color: rgba($color: #02a7ea , $alpha: .4);
     .sort-content{
         display: flex;
         align-items: center;
@@ -748,6 +768,7 @@ header{
                 border-radius: 5px !important;
                 border: none;
                 transition: all .2s linear;
+                z-index: 99 !important;
                 h4{
                     color: #000000;
                     font-size: 15px;
@@ -759,7 +780,11 @@ header{
                     color: #000;
                     font-size: 15px;
                     font-weight: 500;
-                    margin-bottom: 20px;
+                    padding: 10px 20px;
+                    border-bottom: 1px solid rgba($color: #000000, $alpha: .3);
+                    &:last-child{
+                        border: none;
+                    }
                 }
                 &.show
                 {
@@ -821,6 +846,7 @@ header{
 .products{
     width: 100%;
     padding: 50px 0px;
+    background-color: rgba($color: #02a7ea , $alpha: .4);
     .box{
         width: 100%;
         padding: 20px 10px;
@@ -914,7 +940,7 @@ header{
 .plane-booking{
     width: 100%;
     padding: 120px 0px 50px 0px;
-    background-color: #fefefe;
+    background-color: rgba($color: #02a7ea , $alpha: .4);
     .data-content{
         width: 100%;
         padding: 20px 10px;
@@ -933,6 +959,166 @@ header{
             font-size: 15px;
             font-weight: 500;
             margin-bottom: 20px;
+        }
+    }
+}
+.modal{
+    h5{
+        color: #02a7ea;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        p{
+            color: #000;
+            font-size: 15px;
+            font-weight: 600;
+            margin: 0px;
+            .link{
+                margin: 0px 10px;
+                color: #02a7ea;
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+    }
+    img{
+        width: 120px;
+        height: 60px;
+        margin: auto;
+        object-fit: contain;
+    }
+}
+.life-chat{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    z-index: 998;
+    background-color: #02a7ea;
+    img{
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(62deg) brightness(105%) contrast(103%);
+    }
+}
+.polices{
+    width: 100%;
+    padding: 30px 0px;
+    background-color: rgba($color: #02a7ea , $alpha: .4);
+    .content{
+        width: 100%;
+        padding: 30px 10px;
+        background-color: #fff;
+        border-radius: 10px;
+        h4{
+            color: #000;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 0px;
+        }
+        p{
+            color: #888;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 2.5rem;
+            margin: 20px 0px;
+        }
+    }
+}
+.questions{
+    width: 100%;
+    padding: 40px 0px;
+    background-color: rgba($color: #02a7ea , $alpha: .4);
+    .card , .card-header{
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        margin-bottom: 20px;
+
+    }
+    .card{
+        box-shadow: 0px 2px 25px 0px rgba($color: #236192 , $alpha: .18);
+        .btn-link{
+            width: 100%;
+            height: 60px;
+            font-weight: 500;
+            text-align: right;
+            text-decoration: none;
+            position: relative;
+            color: #333;
+            background-color: #f7f7f7;
+            font-size: 15px;
+            &::after{
+                content: '\2212';
+                position: absolute;
+                width: 35px;
+                font-size: 25px;
+                border-radius: 5px;
+                text-align: center;
+                left: 15px;
+                top: 11px;
+                background-color: rgba($color: #236192 , $alpha: .4);
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                background-color: #f7f7f7;
+                z-index: 1;
+                transform: rotate(45deg);
+                right: 35px;
+                top: 46px;
+                border-radius: 4px;
+            }
+            &.collapsed{
+                &::after{
+                    content: '\002B';
+                }
+            }
+        }
+        .card-body{
+            background-color: rgba($color: #f7f7f7 , $alpha: .4);
+            .answer{
+                font-size: 15px;
+                font-weight: 400;
+                color: #333;
+                line-height: 2rem;
+                text-align: justify;
+            }
+        }
+    }
+    .image-content{
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .custom-btn{
+        margin: auto;
+        &::after , &::before{
+            background-color: #fff !important;
         }
     }
 }
